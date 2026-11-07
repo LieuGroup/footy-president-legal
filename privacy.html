@@ -25,13 +25,14 @@
   <main id="main">
     <div class="wrap">
       <h1 id="top">Privacy Policy</h1>
-      <p class="updated">Last updated <time datetime="2026-10-01">1 October 2026</time></p>
+      <p class="updated">Last updated <time datetime="2026-11-07">7 November 2026</time></p>
       <section class="summary" aria-labelledby="summary-title">
         <h2 id="summary-title">The short version</h2>
         <ul>
           <li><strong>No account.</strong> You never sign up and we never ask for your name or email in the game.</li>
           <li><strong>Your careers stay on your iPhone.</strong> Saves, clubs, settings and any league edits are stored on your device. We cannot see them.</li>
-          <li><strong>No ads, no tracking.</strong> There are no ads, no analytics SDKs and no advertising identifier (IDFA). We never ask for App Tracking Transparency permission.</li>
+          <li><strong>No ads, no tracking.</strong> There are no ads and no advertising identifier (IDFA), and we never ask for App Tracking Transparency permission.</li>
+          <li><strong>Game analytics.</strong> From version 1.1 the game tells us which screens and features are used (for example "played a match" or "opened the shop"), tied to the same anonymous ID RevenueCat uses, so we can make the game better. No name, email, location or contacts.</li>
           <li><strong>Purchases go through Apple.</strong> RevenueCat checks what you have bought using an anonymous ID.</li>
           <li><strong>Ad measurement without tracking.</strong> If you found the game through an ad, Apple's privacy-preserving attribution tells us which campaign worked, never who you are.</li>
         </ul>
@@ -58,12 +59,18 @@
         </ul>
         <p>RevenueCat may forward anonymous purchase events to ad networks' conversion APIs so they can count sales from campaigns. These events carry the anonymous app user ID and purchase details, never your name, email or IDFA.</p>
       </section>
+      <section aria-labelledby="analytics">
+        <h2 id="analytics">5. Game analytics</h2>
+        <p>From version 1.1 the App Store version of the game sends us usage events through PostHog, a product analytics service. An event is a game milestone or decision, such as finishing onboarding, playing a match, giving a quarter-time talk, opening the shop, viewing the Go Pro offer or completing a purchase, with details like the season, the result or which product. Each event carries the same anonymous app user ID that RevenueCat uses, the app version and whether Go Pro is unlocked.</p>
+        <p>We use this to see which parts of the game people enjoy, where they stop playing and which offers work. We do not send your name, email, contacts, location or anything you type, and we do not use it to track you across other apps or websites or for advertising. PostHog receives your IP address when the app connects; we switch off its location lookup. TestFlight, test and development builds send nothing.</p>
+        <p>RevenueCat may also share purchase and refund events with PostHog under the same anonymous ID, so both views of a purchase match.</p>
+      </section>
       <section aria-labelledby="support-emails">
-        <h2 id="support-emails">5. When you contact us</h2>
+        <h2 id="support-emails">6. When you contact us</h2>
         <p>If you email us, we receive your email address and what you write. We use it only to reply and delete the conversation within 12 months of your last message.</p>
       </section>
       <section aria-labelledby="what-we-dont-do">
-        <h2 id="what-we-dont-do">6. What we never do</h2>
+        <h2 id="what-we-dont-do">7. What we never do</h2>
         <ul>
           <li>We do not sell your personal information or share it for cross-context behavioural advertising.</li>
           <li>We do not show third-party ads in the game.</li>
@@ -72,39 +79,41 @@
         </ul>
       </section>
       <section aria-labelledby="providers">
-        <h2 id="providers">7. Who receives data</h2>
+        <h2 id="providers">8. Who receives data</h2>
         <div class="table-scroll">
           <table>
             <thead><tr><th scope="col">Provider</th><th scope="col">What it receives</th><th scope="col">Why</th></tr></thead>
             <tbody>
               <tr><td>Apple</td><td>Payment and purchase data; attribution and conversion values</td><td>Payments, refunds, privacy-preserving ad measurement</td></tr>
               <tr><td>RevenueCat (US)</td><td>Anonymous app user ID, purchase information, attribution token</td><td>Checking and restoring purchases; campaign-level attribution</td></tr>
+              <tr><td>PostHog (US)</td><td>Anonymous app user ID, game usage events, app version, IP address (no location lookup)</td><td>Understanding how the game is played and improving it</td></tr>
             </tbody>
           </table>
         </div>
         <p>We may disclose information if the law requires it. If the game is sold or transferred, this policy continues to apply.</p>
       </section>
       <section aria-labelledby="retention">
-        <h2 id="retention">8. How long we keep data</h2>
+        <h2 id="retention">9. How long we keep data</h2>
         <ul>
           <li><strong>On your iPhone:</strong> until you delete it or the app.</li>
           <li><strong>Purchase records at RevenueCat and Apple:</strong> as long as needed to provide your purchases, plus the period tax and accounting law requires.</li>
+          <li><strong>Game analytics at PostHog:</strong> as long as we need them to understand how the game is played. Email us with your Player ID (Settings, About; tap to copy) and we will delete them.</li>
           <li><strong>Support emails:</strong> up to 12 months after your last message.</li>
         </ul>
       </section>
       <section aria-labelledby="children">
-        <h2 id="children">9. Children</h2>
+        <h2 id="children">10. Children</h2>
         <p>Footy President is suitable for all ages and collects no personal information in the game. We do not knowingly collect personal information from children. Purchases need the approval of whoever controls the Apple ID, and Apple's Ask to Buy and Screen Time controls apply.</p>
       </section>
       <section aria-labelledby="rights">
-        <h2 id="rights">10. Your rights</h2>
+        <h2 id="rights">11. Your rights</h2>
         <p><strong>Australia.</strong> We follow the Australian Privacy Principles in the Privacy Act 1988 (Cth). You can ask to access or correct your information or make a complaint by emailing us; we aim to respond within 30 days. If you are not satisfied, contact the Office of the Australian Information Commissioner at <a href="https://www.oaic.gov.au">oaic.gov.au</a>.</p>
         <p><strong>EU, EEA and UK.</strong> LilGroup is the controller of the limited data above. We rely on performance of a contract (providing your purchases) and our legitimate interest in measuring our advertising. You have the rights to access, correct, delete, restrict, object and port your data, and to complain to your data protection authority.</p>
         <p><strong>California.</strong> We collect identifiers (an anonymous app user ID) and commercial information (purchases). We do not sell or share personal information. You can ask to know, delete or correct it, and we will not discriminate against you for asking.</p>
         <p>Because there are no accounts, we may hold nothing linked to you. Tell us the approximate purchase date and we will try to find the anonymous record.</p>
       </section>
       <section aria-labelledby="changes">
-        <h2 id="changes">11. Changes</h2>
+        <h2 id="changes">12. Changes</h2>
         <p>We will update the date above when this policy changes, and tell you in the game for important changes.</p>
         <p class="back-to-top"><a href="#top">Back to top</a></p>
       </section>
@@ -114,7 +123,7 @@
     <div class="wrap">
       <p>Footy President is provided by LilGroup. Footy President uses a fictional league, clubs and players and is not affiliated with, endorsed or licensed by any professional league, players' association or club.</p>
       <p>Contact: <a href="mailto:oscar.lehuu@gmail.com">oscar.lehuu@gmail.com</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
-      <p>Last updated <time datetime="2026-10-01">1 October 2026</time>.</p>
+      <p>Last updated <time datetime="2026-11-07">7 November 2026</time>.</p>
     </div>
   </footer>
 </body>
